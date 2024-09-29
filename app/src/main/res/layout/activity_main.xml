@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b3c45"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/spotifylogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Spotify"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="110dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#6A6767"
+            android:text="Sign in" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="Sign Up" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingEnd="260dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Name"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:hint="Enter your name here"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingEnd="270dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Email"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"
+        android:hint="Enter your email here"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="230dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Password"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_security_24"
+        android:drawablePadding="5dp"
+        android:hint="Set a strong password"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="100dp"
+        android:textColor="@color/white"
+        android:text="I agree to the terms and services" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4CAF50"
+        android:background="@color/white"
+        android:text="Sign Up"/>
+</LinearLayout>
